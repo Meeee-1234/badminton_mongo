@@ -25,7 +25,6 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState(null); // popup image
 
   useEffect(() => {
-    // ดึงข้อมูล user จาก localStorage
     const savedUser = localStorage.getItem("auth:user");
     if (savedUser) {
     try {
@@ -65,7 +64,7 @@ export default function Home() {
           </div>
       </header>
 
-      {/* Game On */}
+      {/* ! Game On ! */}
         <section style={{ position: "relative", width: "100%", height: "80vh", overflow: "hidden", }} >
           <img src={heroImages[current]} alt="Hero"
               style={{ width: "100%", height: "100%", objectFit: "cover", filter: "brightness(0.6)", transition: "0.5s", }} />
